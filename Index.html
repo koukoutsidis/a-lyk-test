@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Οδηγός μελέτης – Ερωτήσεις σελ. 134–137 | 3ο ΓΕΛ</title>
+<style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f4f6fa; color: #19283e; font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; line-height: 1.6; }
+    #studyQuiz { --sq-navy: #173667; --sq-red: #cf1735; --sq-stroke: #e0e6f0; --sq-muted: #627187; max-width: 1040px; margin: 34px auto; padding: 0 20px 50px; }
+    #studyQuiz button, #studyQuiz input, #studyQuiz textarea, #studyQuiz select { font: inherit; }
+    #studyQuiz button { cursor: pointer; }
+    #studyQuiz button:focus-visible, #studyQuiz input:focus-visible, #studyQuiz textarea:focus-visible, #studyQuiz summary:focus-visible, #studyQuiz select:focus-visible { outline: 3px solid #a4bee8; outline-offset: 3px; }
+    #studyQuiz .sq-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 20px 0 25px; }
+    #studyQuiz .sq-eyebrow { color: var(--sq-red); font-weight: 800; letter-spacing: .08em; font-size: .74rem; text-transform: uppercase; }
+    #studyQuiz h1 { font-size: clamp(1.8rem,4vw,2.65rem); line-height: 1.2; margin: 6px 0 5px; letter-spacing: -.035em; color: var(--sq-navy); }
+    #studyQuiz .sq-desc { margin: 0; color: var(--sq-muted); font-size: .97rem; }
+    #studyQuiz .sq-badge { padding: 9px 14px; color: #345b43; background: #e9f5ed; border: 1px solid #cfe7d5; border-radius: 999px; white-space: nowrap; font-weight: 700; font-size: .8rem; }
+    #studyQuiz .sq-card { background: #fff; border: 1px solid var(--sq-stroke); border-radius: 18px; box-shadow: 0 8px 35px rgba(25,49,89,.055); overflow: hidden; }
+    #studyQuiz .sq-progress-wrap { border-bottom: 1px solid var(--sq-stroke); padding: 22px 30px 19px; }
+    #studyQuiz .sq-progress-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 11px; }
+    #studyQuiz .sq-progress-head strong { color: var(--sq-navy); font-size: .95rem; }
+    #studyQuiz .sq-progress-head span { color: var(--sq-muted); font-size: .83rem; }
+    #studyQuiz .sq-track { height: 7px; background: #e8edf6; border-radius: 10px; overflow: hidden; }
+    #studyQuiz .sq-track > div { height: 100%; width: 0; background: var(--sq-red); transition: width .2s ease; }
+    #studyQuiz .sq-main { padding: 28px 30px 20px; }
+    #studyQuiz .sq-notice { display: flex; gap: 14px; align-items: flex-start; background: #edf3fd; border-left: 4px solid #456bad; padding: 17px 18px; border-radius: 9px; margin-bottom: 15px; color: #233e66; font-size: .94rem; }
+    #studyQuiz .sq-notice-icon { font-size: 1.15rem; margin-top: 1px; flex: 0 0 auto; }
+    #studyQuiz .sq-notice p { margin: 0; }
+    #studyQuiz .sq-qmeta { text-transform: uppercase; letter-spacing: .075em; font-weight: 800; color: var(--sq-red); font-size: .76rem; margin-bottom: 9px; }
+    #studyQuiz h2 { margin: 0 0 22px; color: #152943; font-size: clamp(1.15rem,2.7vw,1.53rem); line-height: 1.45; white-space: pre-line; overflow-wrap: anywhere; }
+    #studyQuiz .sq-options { display: grid; gap: 11px; margin: 0 0 20px; }
+    #studyQuiz .sq-option { display: flex; align-items: flex-start; gap: 15px; border: 1px solid #dce4ef; border-radius: 12px; padding: 15px 16px; cursor: pointer; transition: background .15s,border-color .15s; background: #fff; overflow-wrap: anywhere; }
+    #studyQuiz .sq-option:hover { background: #f8faff; border-color: #b6caea; }
+    #studyQuiz .sq-option.sq-selected { background: #f1f5fd; border-color: #4774b9; }
+    #studyQuiz .sq-option input { accent-color: #244d8a; width: 19px; height: 19px; margin: 2px 0 0; flex: 0 0 auto; }
+    #studyQuiz .sq-opttext { flex: 1; white-space: pre-line; }
+    #studyQuiz .sq-answer { display: block; width: 100%; border: 1px solid #cdd8e8; border-radius: 10px; padding: 13px 15px; min-height: 90px; color: #193047; background: #fff; resize: vertical; }
+    #studyQuiz .sq-answer.sq-singleline { min-height: auto; }
+    #studyQuiz .sq-help { margin: 12px 0 0; font-size: .83rem; color: var(--sq-muted); }
+    #studyQuiz .sq-controls { display: flex; gap: 12px; justify-content: space-between; padding: 6px 0 16px; align-items: center; }
+    #studyQuiz .sq-btn { border: 1px solid #d5dfec; padding: 11px 17px; border-radius: 10px; background: #fff; font-weight: 750; color: var(--sq-navy); transition: background .15s; }
+    #studyQuiz .sq-btn:hover:not(:disabled) { background: #f1f5fd; }
+    #studyQuiz .sq-btn-primary { background: var(--sq-navy); border-color: var(--sq-navy); color: #fff; }
+    #studyQuiz .sq-btn-primary:hover:not(:disabled) { background: #275393; }
+    #studyQuiz .sq-btn:disabled { cursor: not-allowed; opacity: .42; }
+    #studyQuiz .sq-pagination { padding: 13px 0 23px; border-top: 1px solid var(--sq-stroke); border-bottom: 1px solid var(--sq-stroke); margin-bottom: 24px; }
+    #studyQuiz .sq-pagination-title { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 800; color: var(--sq-muted); margin-bottom: 11px; }
+    #studyQuiz .sq-pages { display: flex; flex-wrap: wrap; gap: 8px; }
+    #studyQuiz .sq-page { min-width: 37px; height: 37px; padding: 0 6px; border-radius: 9px; border: 1px solid #dce4ee; background: #fff; color: var(--sq-navy); font-weight: 700; }
+    #studyQuiz .sq-page.sq-marked { border-color: #5a8a68; background: #eaf5ec; }
+    #studyQuiz .sq-page[aria-current="step"] { border: 2px solid var(--sq-navy); box-shadow: 0 0 0 2px #dae6fb; }
+    #studyQuiz .sq-empty { padding: 60px 28px; text-align: center; }
+    #studyQuiz .sq-empty h2 { margin: 0 0 9px; }
+    #studyQuiz .sq-empty p { max-width: 530px; color: var(--sq-muted); margin: 0 auto; }
+    #studyQuiz .sq-mini { display: flex; justify-content: space-between; gap: 12px; margin-top: 15px; color: var(--sq-muted); font-size: .8rem; flex-wrap: wrap; }
+    #studyQuiz .sq-mini button { background: none; border: 0; color: var(--sq-navy); font-weight: 750; padding: 0; text-decoration: underline; text-underline-offset: 3px; }
+    #studyQuiz .sq-config { margin-top: 25px; border: 1px solid var(--sq-stroke); border-radius: 16px; background: #fff; overflow: hidden; }
+    #studyQuiz .sq-config > summary { padding: 17px 21px; font-size: .95rem; font-weight: 800; cursor: pointer; color: var(--sq-navy); }
+    #studyQuiz .sq-config-body { border-top: 1px solid var(--sq-stroke); padding: 20px 22px 24px; }
+    #studyQuiz .sq-config-body h3 { font-size: 1.08rem; margin: 4px 0 8px; }
+    #studyQuiz .sq-config-body p { color: #54687e; margin: 0 0 14px; font-size: .9rem; }
+    #studyQuiz .sq-field { display: block; font-weight: 800; font-size: .84rem; margin: 15px 0 7px; color: #2b4665; }
+    #studyQuiz .sq-edit { border: 1px solid #cfd9e7; border-radius: 9px; padding: 11px 12px; width: 100%; background: #fff; color: #182c45; }
+    #studyQuiz textarea.sq-edit { min-height: 120px; resize: vertical; }
+    #studyQuiz .sq-grid { display: grid; gap: 15px; grid-template-columns: 1fr 1fr; }
+    #studyQuiz .sq-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    #studyQuiz .sq-feedback { margin: 13px 0 0; color: #345d41; font-weight: 700; font-size: .86rem; white-space: pre-line; }
+    #studyQuiz .sq-feedback.sq-error { color: #aa253d; }
+    #studyQuiz .sq-example { background: #f6f8fc; border: 1px solid #e2e8f0; border-radius: 10px; color: #294562; overflow-x: auto; padding: 13px; font-size: .77rem; line-height: 1.6; }
+    #studyQuiz .sq-separator { height: 1px; background: #e6ebf2; margin: 22px 0 20px; }
+    #studyQuiz .sq-student .sq-config { display: none; }
+    #studyQuiz.sq-student .sq-config { display: none; }
+    @media (max-width: 680px) {
+      #studyQuiz { margin: 0 auto; padding: 0 10px 30px; }
+      #studyQuiz .sq-top { padding: 24px 8px 18px; align-items: start; flex-direction: column; gap: 12px; }
+      #studyQuiz .sq-card { border-radius: 14px; }
+      #studyQuiz .sq-main { padding: 22px 18px 12px; }
+      #studyQuiz .sq-progress-wrap { padding-left: 18px; padding-right: 18px; }
+      #studyQuiz .sq-notice { font-size: .88rem; gap: 8px; padding: 14px; }
+      #studyQuiz .sq-option { padding: 13px 11px; gap: 10px; }
+      #studyQuiz .sq-grid { grid-template-columns: 1fr; gap: 0; }
+      #studyQuiz .sq-btn { padding: 10px 11px; }
+      #studyQuiz .sq-controls { gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) { #studyQuiz * { transition: none !important; } }
+  
+    #studyQuiz .sq-option:focus-within { outline: 2px solid #9bbbe6; outline-offset: 2px; }
+    #studyQuiz .sq-pages .sq-page { min-width: 40px; }
+    #studyQuiz .sq-typehelp { color: #54708c; font-size: .88rem; margin: -11px 0 20px; }
+    #studyQuiz .sq-bannerline { font-size: .84rem; color: #5b6c81; margin-top: 8px; }
+    #studyQuiz .sq-controls #sqShortCounter { color: #587089; font-weight: 700; font-size: .92rem; white-space: nowrap; }
+    #studyQuiz .sq-mini button { cursor: pointer; }
+    @media (max-width: 680px) {
+      #studyQuiz .sq-progress-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+    }
+    @media print {
+      body { background: #fff; }
+      #studyQuiz { margin: 0; padding: 0; max-width: none; }
+      #studyQuiz .sq-top { padding-top: 0; }
+      #studyQuiz .sq-card { box-shadow: none; }
+      #studyQuiz .sq-controls, #studyQuiz .sq-pagination, #studyQuiz .sq-mini { display:none; }
+    }
+</style>
+</head>
+<body>
+<main id="studyQuiz" aria-label="Ερωτήσεις μελέτης 134 έως 137">
+  <header class="sq-top">
+    <div>
+      <div class="sq-eyebrow">3ο Γενικό Λύκειο Λαμίας • Οδηγός μελέτης</div>
+      <h1>Ερωτήσεις μελέτης</h1>
+      <p class="sq-desc">Σχολικό βιβλίο · Σελίδες 134–137 · 19 ερωτήσεις</p>
+    </div>
+    <div class="sq-badge">Χωρίς αυτόματη αξιολόγηση</div>
+  </header>
+  <section class="sq-card" aria-label="Διαδραστικές ερωτήσεις">
+    <div class="sq-progress-wrap">
+      <div class="sq-progress-head"><strong id="sqCounter" aria-live="polite">Ερώτηση 1 από 19</strong><span id="sqAnswered">0 από 19 με σημειωμένη απάντηση</span></div>
+      <div class="sq-track" id="sqTrack" role="progressbar" aria-label="Πρόοδος πλοήγησης" aria-valuemin="0" aria-valuemax="100" aria-valuenow="5"><div id="sqProgress" style="width:5%"></div></div>
+    </div>
+    <div class="sq-main">
+      <aside class="sq-notice" role="note"><span class="sq-notice-icon" aria-hidden="true">ⓘ</span><p>Οι ερωτήσεις του τεστ καλύπτουν την ύλη των σελίδων 134 έως 137 του σχολικού βιβλίου και λειτουργούν ως ένας οδηγός μελέτης. Άρα δεν γίνεται έλεγχος των απαντήσεων για να παρακινηθείτε να βρείτε μόνοι σας την απάντηση μέσα από το σχολικό βιβλίο.</p></aside>
+      <div class="sq-controls" aria-label="Πλοήγηση ερωτήσεων">
+      <button id="sqPrevious" class="sq-btn" type="button">← Προηγούμενη</button>
+      <span id="sqShortCounter" aria-live="polite">1 / 19</span>
+      <button id="sqNext" class="sq-btn sq-btn-primary" type="button">Επόμενη →</button>
+    </div>
+    <div class="sq-pagination">
+      <span class="sq-pagination-title">Μετάβαση σε ερώτηση</span>
+      <nav class="sq-pages" id="sqPages" aria-label="Αριθμημένη πλοήγηση"></nav>
+    </div>
+      <div class="sq-qmeta" id="sqType">Επιλέξτε μία απάντηση</div>
+      <h2 id="sqQuestion" tabindex="-1">Φόρτωση ερώτησης…</h2>
+      <div id="sqOptions" class="sq-options" role="group" aria-label="Επιλογές απάντησης"></div>
+      <p class="sq-help" id="sqHelp">Οι απαντήσεις αποθηκεύονται μόνο για προσωπική μελέτη. Δεν εμφανίζεται σωστό ή λάθος.</p>
+    </div>
+  </section>
+  <div class="sq-mini"><span>Οι σημειώσεις αποθηκεύονται τοπικά στον φυλλομετρητή αυτής της συσκευής, εφόσον το επιτρέπει.</span><button id="sqReset" type="button">Καθαρισμός απαντήσεων</button></div>
+</main>
+<script id="sq-data" type="application/json">[{"question":"Ένας υπολογιστής σε ένα σχολικό εργαστήριο παρουσιάζει σημαντική καθυστέρηση στη σύνδεση στο Διαδίκτυο και εξάντληση της μνήμης RAM, χωρίς όμως να έχουν διαγραφεί αρχεία ή να έχει εκτελεστεί κάποιο μολυσμένο πρόγραμμα από τον χρήστη. Ποιο είδος κακόβουλου λογισμικού είναι πιθανότατα υπεύθυνο;","options":["Ιός (Virus)","Λογισμικό κατασκοπίας (Spyware)","Δούρειος ίππος (Trojan horse)","Σκουλήκι (Worm)"],"type":"single"},{"question":"Ένας χρήστης κατεβάζει από μια μη ασφαλή ιστοσελίδα ένα πρόγραμμα που εμφανίζεται ως δωρεάν παιχνίδι. Αφού το εγκαταστήσει, το πρόγραμμα εκτελείται κανονικά, αλλά στο παρασκήνιο ένας εισβολέας αποκτά εξ αποστάσεως τον έλεγχο του υπολογιστή. Ποιο είδος κακόβουλου λογισμικού περιγράφεται;","options":["Λογισμικό κατασκοπίας (Spyware)","Ιός (Virus)","Σκουλήκι (Worm)","Δούρειος ίππος (Trojan horse)"],"type":"single"},{"question":"Ποιες από τις παρακάτω ενέργειες ή ενδείξεις σχετίζονται άμεσα με τη δράση ενός λογισμικού κατασκοπίας (Spyware);","options":["Αυτόματη διαγραφή όλων των αρχείων συστήματος κατά την εκκίνηση του υπολογιστή.","Αυτόματη προσθήκη ανεπιθύμητων γραμμών εργαλείων (toolbars) στον φυλλομετρητή.","Παρακολούθηση των ιστοσελίδων που επισκέπτεται ο χρήστης για την προβολή στοχευμένων διαφημίσεων.","Αλλαγή της αρχικής σελίδας του φυλλομετρητή (browser) χωρίς τη συγκατάθεση του χρήστη."],"type":"multiple"},{"question":"Πώς καταφέρνει ένα πρόγραμμα προστασίας από ιούς (antivirus) να εντοπίσει ένα μολυσμένο αρχείο στον υπολογιστή μας;","options":["Μετατρέπει όλα τα αρχεία του υπολογιστή σε κρυπτογραφημένη μορφή SSL ώστε να μην προσβάλλονται.","Εμποδίζει όλες τις εισερχόμενες συνδέσεις δικτύου ανεξάρτητα από το περιεχόμενο των αρχείων.","Αλλάζει αυτόματα τους κωδικούς πρόσβασης των χρηστών όταν εντοπιστεί ύποπτο αρχείο.","Συγκρίνει το περιεχόμενο των αρχείων με τα ψηφιακά αποτυπώματα γνωστών ιών που περιέχονται στους ενημερωμένους ορισμούς ιών."],"type":"single"},{"question":"Ποιος είναι ο κύριος ρόλος του τείχους προστασίας (firewall) σε ένα υπολογιστικό σύστημα;","options":["Να κρυπτογραφεί τα μηνύματα ηλεκτρονικού ταχυδρομείου πριν από την αποστολή τους.","Να σαρώνει τα τοπικά αποθηκευμένα αρχεία για τον εντοπισμό ψηφιακών αποτυπωμάτων.","Να εμποδίζει εισβολείς ή κακόβουλο λογισμικό από το να αποκτήσουν πρόσβαση στον υπολογιστή μέσω του Διαδικτύου.","Να δημιουργεί αυτόματα αντίγραφα ασφαλείας (backup) των αρχείων του χρήστη."],"type":"single"},{"question":"Κατά τη διάρκεια μιας ηλεκτρονικής αγοράς, ποιο από τα παρακάτω αποτελεί βασική ένδειξη ότι η σύνδεση με την ιστοσελίδα είναι ασφαλής για την καταχώριση στοιχείων πληρωμής;","options":["Η ιστοσελίδα απαιτεί τη λήψη ενός εκτελέσιμου αρχείου πριν την ολοκλήρωση της πληρωμής.","Η ιστοσελίδα περιέχει πολλές αναδυόμενες διαφημίσεις και προσφορές.","Η διεύθυνση URL ξεκινάει απλά με http:// χωρίς επιπλέον σύμβολα ασφαλείας.","Η διεύθυνση της ιστοσελίδας ξεκινάει με https:// και χρησιμοποιείται πρωτόκολλο SSL."],"type":"single"},{"question":"Ποιες από τις παρακάτω δραστηριότητες εμπίπτουν στις κατηγορίες της ηλεκτρονικής διακυβέρνησης (e-government) ή της ηλεκτρονικής τραπεζικής (e-banking);","options":["Διαχείριση τραπεζικών λογαριασμών και μεταφορά χρημάτων μέσω της ιστοσελίδας μιας τράπεζας.","Ηλεκτρονική υποβολή φορολογικής δήλωσης και πληρωμή οφειλών στο Δημόσιο.","Μεταφόρτωση δωρεάν λογισμικού από ανώνυμα φόρουμ του Διαδικτύου.","Ηλεκτρονική αίτηση και αναζήτηση πιστοποιητικών από δημόσιους φορείς."],"type":"multiple"},{"question":"Ποιος είναι ο κύριος σκοπός του Πανευρωπαϊκού Συστήματος Πληροφόρησης για τα Παιχνίδια (PEGI Rating System);","options":["Παρέχει ετικέτες για τον χαρακτηρισμό της καταλληλότητας των παιχνιδιών με βάση την ηλικία και το περιεχόμενο.","Απαγορεύει εντελώς την πρόσβαση στο Διαδίκτυο σε ανήλικους χρήστες.","Κρυπτογραφεί τις διαδικτυακές συναλλαγές κατά την αγορά παιχνιδιών.","Προστατεύει τους υπολογιστές από τη μόλυνση με δούρειους ίππους κατά τη διάρκεια του παιχνιδιού."],"type":"single"},{"question":"Λαμβάνετε ένα e-mail που φαίνεται να αποστέλλεται από μια γνωστή τράπεζα, το οποίο σας ζητά να πατήσετε σε έναν σύνδεσμο και να καταχωρίσετε επειγόντως τους κωδικούς πρόσβασής σας. Πρόκειται για παράδειγμα:","options":["Ηλεκτρονικού ψαρέματος (Phishing)","Ενεργοποίησης του τείχους προστασίας (Firewall)","Αυτόματης αναβάθμισης του φυλλομετρητή","Νόμιμης ενημέρωσης από το τμήμα υποστήριξης της τράπεζας"],"type":"single"},{"question":"Ποια από τα παρακάτω μέτρα συμβάλλουν στην ουσιαστική προστασία ενός υπολογιστή από το κακόβουλο λογισμικό;","options":["Διατήρηση εγκατεστημένου antivirus με τακτικά ενημερωμένους ορισμούς ιών.","Λήψη τακτικών αντιγράφων ασφαλείας (backup) των αρχείων.","Άνοιγμα όλων των συνημμένων αρχείων e-mail από αγνώστους για χειροκίνητη εξέταση.","Τακτική ενημέρωση του Λειτουργικού Συστήματος και των εφαρμογών του υπολογιστή."],"type":"multiple"},{"question":"Τι προσφέρει το πρωτόκολλο SSL (Secure Sockets Layer) κατά τη μετάδοση ευαίσθητων δεδομένων στο Διαδίκτυο;","options":["Αυξάνει την ταχύτητα σύνδεσης και τη μνήμη του υπολογιστή.","Εμποδίζει την εμφάνιση ανεπιθύμητων διαφημιστικών παραθύρων.","Εντοπίζει και διαγράφει αυτόματα τους ιούς από τον σκληρό δίσκο.","Παρέχει ασφάλεια και απόρρητη επικοινωνία μέσω μεθόδων κρυπτογράφησης."],"type":"single"},{"question":"Ποια είναι η κύρια σκοπιμότητα της χρήσης λογισμικού γονικού ελέγχου ή φιλτραρίσματος περιεχομένου;","options":["Απελευθερώνει πόρους μνήμης κατά την εκτέλεση ηλεκτρονικών παιχνιδιών.","Αντικαθιστά πλήρως την ανάγκη εγκατάστασης τείχους προστασίας (firewall).","Επιτρέπει την αυτόματη λήψη εκτελέσιμων αρχείων από οποιαδήποτε μη ασφαλή ιστοσελίδα.","Ρυθμίζει την πρόσβαση σε πληροφορίες και υπηρεσίες του Διαδικτύου, εμποδίζοντας την έκθεση σε παράνομο ή ακατάλληλο περιεχόμενο."],"type":"single"},{"question":"Ποιο από τα παρακάτω χαρακτηριστικά διαφοροποιεί ουσιαστικά ένα «σκουλήκι» (Worm) από έναν παραδοσιακό ιό (Virus);","options":["Μεταμφιέζεται πάντα σε χρήσιμο παιχνίδι ή εφαρμογή ανίχνευσης ιών.","Αναπαράγεται και διαδίδεται διαμέσου των δικτύων χωρίς να χρειάζεται κάποιο άλλο πρόγραμμα ως όχημα.","Αλλάζει την αρχική σελίδα του φυλλομετρητή και προσθέτει ανεπιθύμητες γραμμές εργαλείων.","Σκοπεύει αποκλειστικά στη διαγραφή των προσωπικών αρχείων του χρήστη."],"type":"single"},{"question":"Πώς λειτουργεί το λογισμικό προστασίας από ιούς (antivirus) και ποιες δυνατότητες διαθέτει όταν εντοπίσει ένα μολυσμένο αρχείο; (Επιλέξτε όλα όσα ισχύουν)","options":["Συγκρίνει το περιεχόμενο των αρχείων με τους ορισμούς ιών που περιέχουν ψηφιακά αποτυπώματα γνωστών ιών.","Διορθώνει αυτόματα τις φυσικές βλάβες στα ψηφιακά αποθηκευτικά μέσα.","Παρέχει 100% απόλυτη προστασία, καθιστώντας περιττή τη λήψη αντιγράφων ασφαλείας.","Μπορεί να προτείνει την επιδιόρθωση, τη διαγραφή ή την απομόνωση του μολυσμένου αρχείου."],"type":"multiple"},{"question":"Ποιες από τις παρακάτω ενέργειες αποτελούν ενδεδειγμένους τρόπους προστασίας από το κακόβουλο λογισμικό; (Επιλέξτε όλα όσα ισχύουν)","options":["Κατάλληλη ρύθμιση των επιλογών ασφαλείας του φυλλομετρητή (browser).","Απενεργοποίηση του antivirus κατά τη λήψη αρχείων από άγνωστες ιστοσελίδες για μεγαλύτερη ταχύτητα.","Τακτική ενημέρωση του Λειτουργικού Συστήματος και των εφαρμογών του υπολογιστή.","Αποφυγή ανοίγματος συνημμένων αρχείων σε e-mail που αποστέλλονται από αγνώστους ή έχουν ύποπτο θέμα."],"type":"multiple"},{"question":"Όταν συνδέεστε σε έναν ιστότοπο για μια ηλεκτρονική συναλλαγή, η διεύθυνση ξεκινά με https:// αντί για http://. Τι σημαίνει το γράμμα «s» και ποιο πρωτόκολλο χρησιμοποιείται;","options":["Προέρχεται από τη λέξη \"software\" και υποδεικνύει ότι η σελίδα περιέχει δωρεάν λογισμικό ασφαλείας.","Προέρχεται από τη λέξη \"system\" και υποδηλώνει ότι ο ιστότοπος ανήκει αποκλειστικά στο Δημόσιο.","Προέρχεται από τη λέξη \"speed\" και εγγυάται τη μέγιστη δυνατή ταχύτητα μεταφοράς των δεδομένων.","Προέρχεται από τη λέξη \"secure\" και υποδηλώνει τη χρήση του πρωτοκόλλου SSL για ασφαλή και κρυπτογραφημένη επικοινωνία."],"type":"single"},{"question":"Ποια είναι η κύρια λειτουργία του λογισμικού κατασκοπίας (Spyware);","options":["Διαγράφει άμεσα τα αρχεία του λειτουργικού συστήματος προκαλώντας αδυναμία εκκίνησης.","Δημιουργεί αντίγραφα του εαυτού του καταναλώνοντας τη μνήμη και τη σύνδεση στο Διαδίκτυο.","Εμποδίζει τους εισβολείς από το να αποκτήσουν εξ αποστάσεως πρόσβαση στον υπολογιστή.","Παρακολουθεί τη διαδικτυακή δραστηριότητα του χρήστη και την αποστέλλει σε τρίτους με σκοπό την προβολή στοχευμένων διαφημίσεων."],"type":"single"},{"question":"Ποιες πληροφορίες παρέχουν οι ετικέτες του Πανευρωπαϊκού Συστήματος Πληροφόρησης για τα Παιχνίδια (PEGI Rating System); (Επιλέξτε όλα όσα ισχύουν)","options":["Την καταλληλότητα του παιχνιδιού με βάση την ηλικία του παίκτη.","Την εγγύηση ότι το παιχνίδι δεν απαιτεί σύνδεση στο Διαδίκτυο.","Την τεχνική ποιότητα και τις απαιτήσεις του επεξεργαστή του υπολογιστή.","Τα ιδιαίτερα χαρακτηριστικά του περιεχομένου του παιχνιδιού (π.χ. παρουσία βίας)."],"type":"multiple"},{"question":"Ποια από τις παρακάτω ενδείξεις επιβεβαιώνει την αξιοπιστία ενός ιστότοπου πριν από την πραγματοποίηση μιας ηλεκτρονικής συναλλαγής;","options":["Η απουσία οποιουδήποτε προσδιορισμού της ιδιοκτήτριας εταιρείας στην αρχική σελίδα.","Ο ξεκάθαρος προσδιορισμός του φορέα (όνομα, στοιχεία επικοινωνίας) και η ύπαρξη αναλυτικών όρων χρήσης και πολιτικής απορρήτου.","Η αποκλειστική χρήση του πρωτοκόλλου http:// χωρίς τη χρήση SSL κατά την καταχώριση της πιστωτικής κάρτας.","Η απαίτηση για αποστολή των κωδικών πρόσβασης μέσω απλού μη κρυπτογραφημένου e-mail."],"type":"single"}]</script>
+<script>(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const questions = JSON.parse($('sq-data').textContent);
+  // No answer key and no grading logic: this is a study guide.
+  const storageKey = '3gel_studyguide_134_137_v2';
+  let current = 0;
+  let responses = {};
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
+    if (saved && Number.isInteger(saved.current)) current = Math.max(0,Math.min(questions.length-1,saved.current));
+    if (saved && saved.responses && typeof saved.responses === 'object' && !Array.isArray(saved.responses)) responses=saved.responses;
+  } catch (_) { /* private browsing / file restrictions */ }
+  function save() {
+    try { localStorage.setItem(storageKey,JSON.stringify({ current,responses })); } catch (_) { /* optional persistence */ }
+  }
+  function answered(i) { return Array.isArray(responses[i]) && responses[i].length>0; }
+  function updateStats() {
+    const total=questions.length, marked=questions.filter((_,i)=>answered(i)).length;
+    $('sqCounter').textContent = 'Ερώτηση ' + (current+1) + ' από ' + total;
+    $('sqAnswered').textContent = marked + ' από ' + total + ' με σημειωμένη απάντηση';
+    $('sqShortCounter').textContent = (current+1) + ' / ' + total;
+    const progress=Math.round(100*(current+1)/total);
+    $('sqProgress').style.width=progress+'%';
+    $('sqTrack').setAttribute('aria-valuenow',String(progress));
+    $('sqPrevious').disabled=current===0;
+    $('sqNext').disabled=current===total-1;
+  }
+  function updatePages() {
+    const nav=$('sqPages'); nav.replaceChildren();
+    questions.forEach((_,i)=>{
+      const btn=document.createElement('button'); btn.type='button';
+      btn.className='sq-page' + (answered(i)?' sq-marked':'');
+      btn.textContent=String(i+1);
+      btn.setAttribute('aria-label','Μετάβαση στην ερώτηση '+(i+1)+(answered(i)?' (έχει απαντηθεί)':''));
+      if(i===current) btn.setAttribute('aria-current','step');
+      btn.addEventListener('click',()=>go(i));
+      nav.append(btn);
+    });
+  }
+  function render() {
+    const q=questions[current];
+    $('sqType').textContent = q.type==='multiple'?'Επιλέξτε όλα όσα ισχύουν':'Επιλέξτε μία απάντηση';
+    $('sqQuestion').textContent=q.question;
+    const opts=$('sqOptions');opts.replaceChildren();
+    q.options.forEach((option,i)=>{
+      const label=document.createElement('label');label.className='sq-option';
+      const input=document.createElement('input');
+      input.type=q.type==='multiple'?'checkbox':'radio';
+      input.name='question-'+current;input.value=String(i);
+      input.checked=Array.isArray(responses[current]) && responses[current].includes(i);
+      if(input.checked)label.classList.add('sq-selected');
+      const text=document.createElement('span');text.className='sq-opttext';text.textContent=option;
+      input.addEventListener('change',()=>{
+        let picked=Array.isArray(responses[current])?[...responses[current]]:[];
+        if(q.type==='multiple') {
+          picked=input.checked?[...new Set([...picked,i])]:picked.filter(n=>n!==i);
+          picked.sort((a,b)=>a-b);
+        } else picked=[i];
+        responses[current]=picked;
+        opts.querySelectorAll('.sq-option').forEach(node=>node.classList.toggle('sq-selected',node.querySelector('input').checked));
+        updateStats();updatePages();save();
+      });
+      label.append(input,text);opts.append(label);
+    });
+    updateStats();updatePages();
+    save();
+  }
+  function go(index) {
+    if(!Number.isInteger(index)||index<0||index>=questions.length||index===current)return;
+    current=index;render();
+    $('sqQuestion').focus({preventScroll:true});
+    const reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    $('sqCounter').scrollIntoView({behavior:reduce?'instant':'smooth',block:'start'});
+  }
+  $('sqPrevious').addEventListener('click',()=>go(current-1));
+  $('sqNext').addEventListener('click',()=>go(current+1));
+  $('sqReset').addEventListener('click',()=>{
+    if(!confirm('Θέλετε να διαγράψετε τις σημειωμένες απαντήσεις σας;'))return;
+    responses={};render();
+  });
+  document.addEventListener('keydown',event=>{
+    if(event.altKey||event.ctrlKey||event.metaKey)return;
+    if(event.target.closest('input,textarea,select,[contenteditable="true"]'))return;
+    if(event.key==='ArrowRight')go(current+1);
+    if(event.key==='ArrowLeft')go(current-1);
+  });
+  render();
+})();</script>
+</body>
+</html>
